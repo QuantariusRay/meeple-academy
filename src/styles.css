@@ -1,75 +1,247 @@
 /* You can add global styles to this file, and also import other style files */
 :root {
-  font-family: Inter, Avenir, Helvetica, Arial, sans-serif;
-  font-size: 16px;
+  font-family: "Raleway", sans-serif;
+  font-size: 18px;
   line-height: 24px;
-  font-weight: 400;
 
   color-scheme: light dark;
-  color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
+  background-color: var(--background-color, rgb(24, 23, 28));
+  color: var(--body-color, rgb(242, 239, 250));
+  --body-font-size: 18px;
+  --body-line-height: 160%;
+  --body-font-weight: 500;
+  --body-letter-spacing: 0px;
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   -webkit-text-size-adjust: 100%;
+
+  --background-color: rgb(24, 23, 28);
+  --body-color: rgb(242, 239, 250);
+  --font-family: "Raleway", sans-serif;
+  --font-style: normal;
+  --font-weight: 600;
+  --letter-spacing: 0px;
+  --paragraph-spacing: 0px;
+  --font-size-scale: 1;
+
+  --framer-font-style: normal;
+
+  --framer-paragraph-spacing: 16px;
+
+  /** Headers **/
+  --h1-font-size: 76px;
+  --h1-line-height: 1;
+
+  --h2-font-size: 68px;
+  --h2-line-height: 2;
+
+  /** Colors **/
+  --primary-color: rgb(183, 165, 253);
+  --secondary-color: rgb(226, 219, 255);
+
+  /** anchors **/
+  --border-bottom-width: 0px;
+  --border-color: rgba(0, 0, 0, 0);
+  --border-left-width: 0px;
+  --border-right-width: 0px;
+  --border-style: solid;
+  --border-top-width: 0px;
+  --anchor-color: rgb(24, 23, 28);
+
+  /** SVG **/
+  --svg-color: rgb(24, 23, 28);
+  --svg-offset: rgb(183, 165, 253);
+
+  /** Card **/
+  --card-background: rgb(33, 31, 40);
+
+  --footer-logo: 'assets/meeple-academy-white';
+  --icon-background-color: rgb(226, 219, 255);
+
+  @media (max-width: 899px) and (min-width: 600px) {
+
+  }
+
+  @media (max-width: 599px) and (min-width: 0px) {
+    /** Headers **/
+    --h1-font-size: 44px;
+    --h1-font-weight: 600;
+    --h1-letter-spacing: 0px;
+    --h1-line-height: 1.2em;
+    --h1-paragraph-spacing: 0px;
+
+    --h2-font-size: 36px;
+    --h2-font-weight: 600;
+    --h2-letter-spacing: 0px;
+    --h2-line-height: 1.2em;
+    --h2-paragraph-spacing: 0px;
+
+    --h3-font-size: 22px;
+    --h3-font-weight: 600;
+    --h3-letter-spacing: 0px;
+    --h3-line-height: 1.4em;
+    --h3-paragraph-spacing: 10px;
+  }
 }
 
-a {
-  font-weight: 500;
-  color: #646cff;
-  text-decoration: inherit;
+@media (prefers-color-scheme: light) {
+  :root {
+    --background-color: rgb(242, 239, 250);
+    --body-color:  rgb(24, 23, 28);
+    --font-family: "Raleway", sans-serif;
+    --font-style: normal;
+    --font-weight: 600;
+    --letter-spacing: 0px;
+    --line-height: 1.2em;
+    --paragraph-spacing: 0px;
+    --text-alignment: start;
+    --font-size-scale: 1;
+    --body-font-size: 18px;
+    --body-line-height: 160%;
+    --body-font-weight: 500;
+    --body-letter-spacing: 0px;
+
+    /** Headers **/
+    --h1-font-size: 76px;
+    --h1-line-height: 1;
+
+    /** Colors **/
+    --primary-color: rgb(0, 136, 204);
+    --secondary-color: rgb(102, 178, 255);
+
+    /** anchors **/
+    --border-bottom-width: 0px;
+    --border-color: rgba(0, 0, 0, 0);
+    --border-left-width: 0px;
+    --border-right-width: 0px;
+    --border-style: solid;
+    --border-top-width: 0px;
+    --anchor-color: rgb(242, 239, 250);
+    --icon-background-color: rgb(24, 23, 28);
+
+    /** SVG **/
+    --svg-color: rgb(242, 239, 250);
+    --svg-offset: rgb(24, 23, 28);
+
+    /** Card **/
+    --card-background: rgb(220, 215, 235);
+
+    --footer-logo: 'assets/meeple-academy-black';
+
+    @media (max-width: 599px) and (min-width: 0px) {
+      /** Headers **/
+      --h1-font-size: 44px;
+      --h1-font-weight: 600;
+      --h1-letter-spacing: 0px;
+      --h1-line-height: 1.2em;
+      --h1-paragraph-spacing: 0px;
+    }
+  }
 }
-a:hover {
-  color: #535bf2;
+
+*, html {
+  scroll-behavior: smooth !important;
 }
 
 body {
   margin: 0;
   display: flex;
-  place-items: center;
-  min-width: 320px;
   min-height: 100vh;
+  background-color: var(--background-color);
+  color: var(--body-color);
+  font: var(--font-family);
+  font-size: var(--body-font-size);
+  line-height: var(--body-line-height);
+  font-weight: var(--body-font-weight);
+}
+
+@supports (aspect-ratio: 1) {
+  body {
+    --aspect-ratio-supported: auto;
+  }
+}
+
+* {
+  box-sizing: border-box;
 }
 
 h1 {
-  font-size: 3.2em;
-  line-height: 1.1;
+  margin: 0;
+  padding: 0;
+  font-size: calc(var(--h1-font-size, 16px) * var(--font-size-scale, 1));
+  line-height: var(--h1-line-height);
 }
 
-button {
+h2 {
+  margin: 0;
+  padding: 0;
+  font-size: calc(var(--h2-font-size, 16px) * var(--font-size-scale, 1));
+  line-height: var(--h2-line-height);
+  font-weight: 600;
+}
+
+h3 {
+  margin: 0;
+  padding: 0;
+  font-size: calc(var(--h3-font-size, 16px) * var(--font-size-scale, 1));
+  line-height: var(--h3-line-height);
+}
+
+a.button {
+  background-color: var(--primary-color);
+  color: var(--anchor-color);
+  font-size: 18px;
+  font-weight: 800;
   border-radius: 8px;
-  border: 1px solid transparent;
-  padding: 0.6em 1.2em;
-  font-size: 1em;
-  font-weight: 500;
-  font-family: inherit;
-  background-color: #1a1a1a;
+  opacity: 1;
+  align-content: center;
+  align-items: center;
   cursor: pointer;
-  transition: border-color 0.25s;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  gap: 8px;
+  height: min-content;
+  justify-content: center;
+  overflow: hidden;
+  padding: 14px 24px;
+  position: relative;
+  text-decoration: none;
+  width: min-content;
+  will-change: transform;
 }
-button:hover {
-  border-color: #646cff;
+
+fa-icon:not(.offset) {
+  svg {
+    color: var(--svg-color);
+  }
 }
-button:focus,
-button:focus-visible {
-  outline: 4px auto -webkit-focus-ring-color;
+
+fa-icon.offset {
+  svg {
+    color: var(--svg-offset);
+  }
 }
+
+
+
 
 .card {
-  padding: 2em;
+  align-items: center;
+  border-radius: 20px;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  padding: 40px 24px;
+  gap: 24px;
+  height: auto;
+  justify-content: center;
+  background-color: var(--card-background);
 }
 
-@media (prefers-color-scheme: light) {
-  :root {
-    color: #213547;
-    background-color: #ffffff;
-  }
-  a:hover {
-    color: #747bff;
-  }
-  button {
-    background-color: #f9f9f9;
-  }
+.offset {
+  color: var(--primary-color);
 }

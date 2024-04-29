@@ -1,5 +1,3 @@
-/// <reference types="vitest" />
-
 import { defineConfig } from 'vite';
 import analog from '@analogjs/platform';
 
@@ -12,7 +10,16 @@ export default defineConfig(({ mode }) => ({
   resolve: {
     mainFields: ['module'],
   },
-  plugins: [analog()],
+  plugins: [analog({
+    prerender: {
+      routes: ['/', '/events', '/donate']
+    }
+  })],
+  ssr: {
+    noExternal: [
+      '@fortawesome/**'
+    ]
+  },
   test: {
     globals: true,
     environment: 'jsdom',
