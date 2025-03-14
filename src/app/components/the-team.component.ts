@@ -33,38 +33,38 @@ export class TheTeamComponent {
     {
       image: '/profile-pics/jesse.jpg',
       title: 'President',
-      name: 'Jesse',
-      bio: 'Jesse is the catalyst for the forming of Meeple Academy of the Ozarks, and a cheerleader of sorts! He and his wife have experience running small businesses, and with that experience he reminds us that we can make a difference. Without Jesse, we wouldn’t have the determination that we do now!'
+      pronouns: 'He/Him',
+      bio: 'Jesse as the president and one of the founding members of Meeple Academy, oversees the board, makes final decisions, and helps out in any capacity he can. He has been playing board games since 2012, and his favorite board game mechanics are worker placement and engine building. Outside of board games, he enjoys hiking and video games. '
     },
     {
       image: '/profile-pics/clancy.jpg',
-      title: 'Vice-President',
-      name: 'Clancy',
-      bio: 'Clancy wears many hats as the Library Curator. Primarily, he’s in charge of putting together a robust library of board games that appeals to board gamers at all levels and from all walks of life. He’s also set up all of our tools for communication and organization. And last of all, he’s a sweetheart. You could tell him, “I’m going to destroy you [in this game],” and he’d simply reply “I like your spirit!”'
+      title: 'Vice President',
+      pronouns: 'He/Him',
+      bio: 'Clancy as vice president oversees operations and curates Meeple Academy’s extensive board game library for the community to check out and play games. He has been playing board games his entire life, and his favorite board game mechanic is worker placement. When he is not playing board games, he enjoys spending time in nature through hiking, camping, and cycling.'
     },
     {
       image: '/profile-pics/q.png',
       title: 'Event Director',
-      name: 'Q',
-      bio: 'Q is exceptionally smart and fastidious. He carries with him a lot of ambition, and backs it up with thorough execution. He’s the architect of our website, our idea generator, and our do-everything guy. He’s talented, and not shy about it!'
+      pronouns: 'He/Him',
+      bio: 'Q as event director organizes and oversees event programming, from setting meetings with the board, connecting with local organizations and businesses, to making decisions for AdventureCon. He has been playing board games since 2005, and his favorite board game genre are deck builders. When he is not gaming, his passion is in software development, which he manages Meeple Academy’s websites.'
     },
     {
-      image: '/profile-pics/liz.jpeg',
-      title: 'Community Outreach Director',
-      name: 'Liz',
-      bio: 'The writer of most of Meeple Academy’s online content and emails. Talks a lot too. She’s alright.'
-    },
-    {
-      image: '/profile-pics/heather.jpeg',
-      title: 'Financial Director',
-      name: 'Heather',
-      bio: 'Our fiscal guru who’s on top of keeping us on track to host board game events, and making sure that we conduct ourselves properly as a nonprofit in good standing! It’s not the spiciest job, but it’s one that requires a smart woman with experience and training. And Heather’s the right one for us. She runs a monthly gathering with her doting husband dubbed “Castle Adams,” and is raising two ancient dogs that wear diapers.'
+      image: '/profile-pics/jessica.jpg',
+      title: 'Marketing Director',
+      pronouns: 'She/Her',
+      bio: 'Jessica as marketing director designs graphics, manages social media engagement, and shares Meeple Academy’s events with the community. She has been playing board games since 2011, and her favorite board game genres are polyomino tile-laying (Tetris!) and social deduction games. Outside of board games, her other hobbies include running a local Asian food blog and sewing cosplay for comic cons.'
     },
     {
       image: '/profile-pics/meeple.png',
-      title: 'Marketing Director',
-      name: 'Jessica',
-      bio: `Jessica is our newest member and doesn't exactly have a cool blurb like the rest of us :(`
+      title: 'Finance Director',
+      pronouns: 'He/Him',
+      bio: 'Brent as finance director manages the budget and provides insight on financial decisions for Meeple Academy.'
+    },
+    {
+      image: '/profile-pics/meeple.png',
+      title: 'Outreach Director',
+      pronouns: 'He/Him',
+      bio: `Wyatt as outreach director finds new connections, reaches out and engages the community, and coordinates volunteers.`
     }
   ];
 }

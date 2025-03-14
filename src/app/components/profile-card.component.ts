@@ -10,7 +10,7 @@ import { Component, Input } from '@angular/core';
       </div>
       <div class="person-profile">
         <span>{{ person.title }}</span>
-        <span>{{ person.name }}</span>
+        <span>{{ person.pronouns }}</span>
       </div>
       <div class="bio-container">
         <p>
@@ -30,9 +30,9 @@ import { Component, Input } from '@angular/core';
       display: block;
       width: 100%;
       height: 100%;
-      border-radius: 99px;
+      border-radius: 50%;
       object-position: center;
-      object-fit: cover;
+      object-fit: fill;
       image-rendering: auto;
     }
 

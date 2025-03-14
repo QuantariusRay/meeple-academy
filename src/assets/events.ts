@@ -29,7 +29,7 @@ export const events: GameEvent[] = [
   {
     eventId: 2,
     eventName: 'AdventureCon',
-    eventDate: 'Coming Soon!',
+    eventDate: 'July 11-13, 2025',
     eventTime: '9:00 AM - 12:00 PM',
     eventImage: '/events/adventure-con.png',
     altDesc: 'AdventureCon by Meeple Academy',
@@ -38,5 +38,18 @@ export const events: GameEvent[] = [
     venueName: 'Four Points by Sheraton',
     venueSite: 'www.adventure-con.com',
     venueAddress: '211 SE Walton Blvd, Bentonville, AR 72712'
+  },
+  {
+    eventId: 3,
+    eventName: 'Games on a Train',
+    eventDate: 'April 27th, 2025',
+    eventTime: '7:30 AM - 5:30 PM',
+    eventImage: '/events/train.png',
+    altDesc: 'Games on a Train by Meeple Academy',
+    eventDescription: 'Join us for a day of train themed games while riding on a train from Springdale to Van Buren. The train ride is a day-long, 134 mile round trip through the Boston Mountains, trestles, and tunnel',
+    about: 'Join us for a day of gaming on a train ride through the Ozarks.',
+    venueName: 'A&M Railroad',
+    venueSite: 'https://amtrainrides.com/',
+    venueAddress: '305 E Emma ave Springdale, AR 72764'
   }
 ];
